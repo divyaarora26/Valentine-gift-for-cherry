@@ -1,0 +1,63 @@
+.envelope-area {
+  position: relative;
+  width: 360px;
+  height: 360px;
+}
+
+.letter-envelope {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 140px;
+  background: #ffd9e6;
+  border-radius: 10px;
+  z-index: 20;
+}
+
+.envelope-flap {
+  position: absolute;
+  top: -18px;
+  height: 60px;
+  width: 100%;
+  background: #ffb6d0;
+  transform-origin: top;
+  transition: transform 0.8s ease;
+}
+
+.letter-open .envelope-flap {
+  transform: rotateX(-180deg);
+}
+
+/* LETTER SLIDES UP */
+.letter-page {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translate(-50%, 80%);
+  width: 280px;
+  height: 360px;
+  background: #fffdf2;
+  border-radius: 12px;
+  opacity: 0;
+  z-index: 10;
+  transition: all 1s cubic-bezier(.2,.9,.2,1);
+}
+
+.letter-open .letter-page {
+  transform: translate(-50%, -30%);
+  opacity: 1;
+}
+
+/* PHOTOS POP */
+.photo {
+  opacity: 0;
+  transform: translateY(20px) scale(0.6);
+  transition: all 0.8s ease;
+}
+
+.photo.show {
+  opacity: 1;
+  transform: translateY(-60px) scale(1);
+  }

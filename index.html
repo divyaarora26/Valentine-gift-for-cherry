@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Valentine's Day — My Muse ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="assets/music.mp3" type="audio/mpeg" />
+</audio>
+
+<!-- ================= PHASE 1 ================= -->
+<main id="phase1" class="phase active">
+  <div class="center-card">
+    <h1 class="title">
+      Happy Valentine's Day<br>
+      <span class="sub">My Muse ❤️</span>
+    </h1>
+
+    <div class="bouquet-wrap">
+      <!-- bouquet SVG unchanged -->
+      <!-- (kept as-is for quality) -->
+      <!-- paste your existing bouquet SVG here -->
+    </div>
+
+    <div class="controls">
+      <button id="toPhase2" class="btn primary">Open</button>
+      <button id="musicToggle" class="btn outline">Play music</button>
+    </div>
+  </div>
+</main>
+
+<!-- ================= PHASE 2 ================= -->
+<section id="phase2" class="phase">
+  <div class="question-card">
+    <h2 class="pixel">Will you be my Valentine?</h2>
+    <p class="soft">I'll be by your side on every adventure — blocks and all.</p>
+
+    <div class="choice-row">
+      <button id="yesBtn" class="btn yes">Yes</button>
+      <button id="noBtn" class="btn no">No</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PHASE 3 ================= -->
+<section id="phase3" class="phase">
+  <div class="letter-scene">
+
+    <div class="envelope-area" id="envelopeArea">
+      <div class="letter-envelope" id="envelope">
+
+        <div class="envelope-body"></div>
+        <div class="envelope-flap"></div>
+
+        <div class="pig-face">
+          <div class="row">
+            <span class="b"></span><span class="b"></span>
+          </div>
+          <div class="row">
+            <span class="p"></span><span class="n"></span><span class="p"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LETTER THAT SLIDES OUT -->
+      <div class="letter-page" id="letterPage">
+        <div class="paper-top">
+          <span class="pixel">For You 💌</span>
+        </div>
+        <div class="paper-body">
+          <p class="letter-text">
+Hey you,
+
+From the moment you appeared in my world,
+everything felt warmer.
+This is my little way of saying —
+you matter to me more than words can show.
+
+Happy Valentine’s Day ❤️
+          </p>
+        </div>
+      </div>
+
+      <div class="photo-stack">
+        <img src="assets/photo1.jpg" class="photo" id="photo1">
+        <img src="assets/photo2.jpg" class="photo" id="photo2">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PHASE 4 ================= -->
+<section id="phase4" class="phase">
+  <div class="center-card">
+    <h2 class="pixel">Always Yours ❤️</h2>
+    <button id="replayBtn" class="btn primary">Replay</button>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+  </html>
